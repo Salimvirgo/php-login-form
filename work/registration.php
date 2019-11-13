@@ -7,7 +7,8 @@
 </head>
 <body>
 
-	<div class="container">
+	<?php include('navbar.php')?>
+	<div class="container register">
 		<img src="image/login.png"/>
 		<div class="header">
 			
@@ -15,35 +16,36 @@
 
 		</div>
 
-		<form action="registration.php" method="post">
+	<div class="input-fields">
+	<form action="registration.php" method="post" class="reg">
 		
 		<?php include('errors.php'); ?>
 
-			<div class="form-input">
+			<div class="form-input register">
 				
-				<label for="username"></label>
-				<input type="text" placeholder="Enter your username" name="username" required>
+				<label for="username">Username</label>
+				<input type="text" placeholder="Username....." name="username" required>
 
 			</div>
 
-			<div class="form-input">
+			<div class="form-input register">
 				
-				<label for="email"> </label>
-				<input type="email" placeholder="Enter your email" name="email" required>
+				<label for="email">Email</label>
+				<input type="email" placeholder="Email....." name="email" required>
 
 			</div>
 
-			<div class="form-input">
+			<div class="form-input register">
 				
-				<label for="password"></label>
-				<input type="password" placeholder="Enter your password" name="password_1" required>
+				<label for="password">Password</label>
+				<input type="password" placeholder="Enter Password" name="password_1" required>
 
 			</div>
 
-			<div class="form-input">
+			<div class="form-input register">
 				
-				<label for="password"></label>
-				<input type="password" placeholder="Please confirm your password" name="password_2" required>
+				<label for="password">Confirm Password</label>
+				<input type="password" placeholder="Confirm Password" name="password_2" required>
 
 			</div>
 
@@ -52,6 +54,7 @@
 			<p>Already a user? <a href="login.php"> <b>Log in </b> </a> </p>
 
 		</form>
+	</div>
 
 	</div>
 
