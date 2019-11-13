@@ -1,67 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	color:white;
+	text-decoration: none;
+}
 body{
-	margin: 0 auto;
-	background-image: url("../image/tech.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 720px;
+	background-color:whitesmoke
 }
-
-.header{
-	margin: 0 auto;
-	color: black;
-
-}
-.container{
-	width: 500px;
-	height: 500px;
+.nav{
+	width: 100%;
+	height: 50px;
+	/* border: 1px solid rgb(116, 11, 11); */
+	background-color: #346688;
+	color: white;
 	text-align: center;
-	margin: 0 auto;
-	background-color: rgba(44, 62, 80,0.7);
-	margin-top: 140px;
-}
 
+	
+}
+.nav nav{
+	/* border: 1px solid red; */
+	/* margin: 10px; */
+	padding: 14px 0;
+}
+.nav a{
+	padding: 15px 13px;
+	font-size: 18px;
+	/* border:1px solid black; */
+	display: inline-blocks;
+	transition: .5s;
+}
+.nav a:hover{
+	background-color: #093653;
+	transition: .5s ease-in-out;
+}
+.header{
+/* border: 1px solid green; */
+padding: 10px;
+background-color: #2980b9;
+color: white;
+text-align: center;
+
+
+}
+.container.login{
+	width: 70%;
+	height: 450px;
+	/* border: 1px solid red; */
+	margin: 100px auto;
+	padding: 10px;
+	
+}
+.container.register{
+	width: 70%;
+	height: 600px;
+	/* border: 1px solid red; */
+	margin: 80px auto;
+	padding: 10px;
+}
 .container img{
-	width: 150px;
-	height: 150px;
-	margin-top: -60px;
+	width: 100px;
+	height: 100px;
+	/* border: 1px solid blue; */
+	border-radius: 50%;
+	margin: -65px auto 0 70px;
+}
+/* .input-fields{
+	border: 1px solid yellow;
+	padding: 0 5px;
+} */
+
+.input-fields form.log{
+	/* border: 1px solid black; */
+	padding: 20px 10px;
+	
+}
+.input-fields form.reg{
+	/* border: 1px solid brown; */
+	padding: 10px;
+	
 }
 
-input[type="text"],input[type="password"]{
-	margin-top: 30px;
-	height: 30px;
-	width: 300px;
-	font-size: 18px;
-	margin-bottom: 20px;
-	background-color: #fff;
-	padding-left: 40px;
-}
-
-input[type="email"]{
-	margin-top: 30px;
-	height: 30px;
-	width: 300px;
-	font-size: 18px;
-	margin-bottom: 20px;
-	background-color: #fff;
-	padding-left: 40px;
-}
-
-.form-input::before{
-	font-family: "FontAwesome";
-	padding-left: 07px;
-	padding-top: 40px;
-	position: absolute;
-	font-size: 35px;
-	color: #2980b9; 
-}
-
-.form-input:nth-child(2)::before{
+.input-fields form .form-input{
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px;
+	/* border: 1px solid green; */
 
 }
+.form-input.login input{
+	width: 100%;
+	padding: 5px 5px;
+	font-size: 15px;
+	margin-top: 4px;
+	border-radius: 2px;
+	border: 1px black solid;
+}
+.form-input.register input{
+	width: 100%;
+	padding: 5px 5px;
+	font-size: 15px;
+	margin-top: 4px;
+	border-radius: 2px;
+	border: 1px black solid;
+}
 
-button{
-	padding: 15px 25px;
+
+
+.form-input input:focus{
+	outline: none;
+}
+.form-input input::placeholder{
+	text-transform: capitalize;
+	font-weight: bold;
+	color: rgb(100, 100, 100);
+}
+.form-input label{
+	font-size: 20px;
+
+}
+.input-fields button{
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px 0;
+	background-color: #4481aa;
 	border: none;
-	background-color: #80b929;
-	color: #fff;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: .5s;
+	border-radius: 5px;
 }
-
+.input-fields button:hover{
+	background-color: #16364b;
+	transition: .5s ease-in-out;
+}
+.input-fields p{
+	text-align: center;
+	margin: 20px 0;
+	font-size: 20px;
+}
+.input-fields p a{
+color: #1583cc;
+text-decoration: none;
+transition: .5s;
+}
+.input-fields p a:hover{
+	color: #094268;
+	transition: .5s ease-in-out;
+}
